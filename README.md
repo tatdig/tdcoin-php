@@ -19,7 +19,7 @@ composer install
 
 ## Contributing
 
-All contributions are welcome. Please see [[this page](https://github.com/Bit-Wasp/bitcoin-php/blob/master/CONTRIBUTING.md)] before you get started
+All contributions are welcome. Please see [[this page](https://github.com/tatdig/tdcoin-php/blob/master/CONTRIBUTING.md)] before you get started
 
 ## Documentation
 
