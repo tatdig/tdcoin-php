@@ -25,7 +25,7 @@ use BitWasp\Bitcoin\Key\Factory\PrivateKeyFactory;
  */
 
 $privKeyFactory = new PrivateKeyFactory();
-$privateKey = $privKeyFactory->fromWif('5Hwig3iZrm6uxS6Ch1egmJGyC89Q76X5tgVgtbEcLTPTx3aW5Zi');
+$privateKey = $privKeyFactory->fromWif('4bCDvwx8djP9kgxkukxtgdKqGDhFrG5KiAKZjHaJfUQo5zVexWf');
 $txOut = new TransactionOutput(
     1501000,
     ScriptFactory::scriptPubKey()->payToPubKeyHash($privateKey->getPubKeyHash())
@@ -35,7 +35,7 @@ $txOut = new TransactionOutput(
 $addressCreator = new AddressCreator();
 $transaction = TransactionFactory::build()
     ->input('87f7b7639d132e9817f58d3fe3f9f65ff317dc780107a6c10cba5ce2ad1e4ea1', 0)
-    ->payToAddress(1500000, $addressCreator->fromString('1DUzqgG31FvNubNL6N1FVdzPbKYWZG2Mb6'))
+    ->payToAddress(1500000, $addressCreator->fromString('TMcxCqRVL6x7pDHYqyswEVJnx73ZRnNkdT'))
     ->get();
 
 $signer = new Signer($transaction);

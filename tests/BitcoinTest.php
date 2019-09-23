@@ -25,10 +25,10 @@ class BitcoinTest extends AbstractTestCase
     public function testGetNetwork()
     {
         $default = Bitcoin::getDefaultNetwork();
-        $bitcoin = NetworkFactory::bitcoin();
+        $tdcoin = NetworkFactory::tdcoin();
         $viacoin = NetworkFactory::viacoin();
 
-        $this->assertEquals($default, $bitcoin);
+        $this->assertEquals($default, $tdcoin);
         $this->assertEquals($default, Bitcoin::getNetwork());
         Bitcoin::setNetwork($viacoin);
         $this->assertSame($viacoin, Bitcoin::getNetwork());

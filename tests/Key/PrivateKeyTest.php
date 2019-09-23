@@ -109,16 +109,16 @@ class PrivateKeyTest extends AbstractTestCase
      */
     public function testGetWif(EcAdapterInterface $ecAdapter)
     {
-        $network = NetworkFactory::bitcoin();
+        $network = NetworkFactory::tdcoin();
         $privKeyFactory = new PrivateKeyFactory($ecAdapter);
 
         $privateKey = $privKeyFactory->fromHexUncompressed('4141414141414141414141414141414141414141414141414141414141414141');
-        $this->assertSame($privateKey->toWif($network), '5JK2Rv7ZquC9J11AQZXXU7M9S17z193GPjsKPU3gSANJszAW3dU');
-        $this->assertSame($privateKey->toWif(), '5JK2Rv7ZquC9J11AQZXXU7M9S17z193GPjsKPU3gSANJszAW3dU');
+        $this->assertSame($privateKey->toWif($network), '4bVPj3gtwxzPTmoMNPVYSNktCcBuMMLssKP4GKbrZQEAWz6293R');
+        $this->assertSame($privateKey->toWif(), '4bVPj3gtwxzPTmoMNPVYSNktCcBuMMLssKP4GKbrZQEAWz6293R');
 
         $privateKey = $privKeyFactory->fromHexCompressed('4141414141414141414141414141414141414141414141414141414141414141');
-        $this->assertSame($privateKey->toWif($network), 'KyQZJyRyxqNBc31iWzZjUf1vDMXpbcUzwND6AANq44M3v38smDkA');
-        $this->assertSame($privateKey->toWif(), 'KyQZJyRyxqNBc31iWzZjUf1vDMXpbcUzwND6AANq44M3v38smDkA');
+        $this->assertSame($privateKey->toWif($network), 'GsEKJas6Hc8J9AjauQGym12gzEK84pnjX68MQd6qk1X715sivcxq');
+        $this->assertSame($privateKey->toWif(), 'GsEKJas6Hc8J9AjauQGym12gzEK84pnjX68MQd6qk1X715sivcxq');
     }
 
     /**
@@ -155,9 +155,9 @@ class PrivateKeyTest extends AbstractTestCase
     {
         $math = $ecAdapter->getMath();
         $regular = array(
-            '5KeNtJ66K7UNpirG3574f9Z8SjPDPTc5YaSBczttdoqNdQMK5b9' => 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b',
-            '5J6B9UWZSxwHuJF3jv1zi2ZxMAVhA7bBvFFcZXFo7ga1UdgNtDs' => '2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892',
-            '5JKQJXqLFxQ9JSw2Wc4Z5ZY1v1BR8u4BfndtXZd1Kw9FsGe4ECq' => '421c76d77563afa1914846b010bd164f395bd34c2102e5e99e0cb9cf173c1d87'
+            '4cHSrU1JYFNSF62RrKu9Cid7nEfNu7bX75sohBRhZtZLRyAEpsM' => 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b',
+            '4cWF9hJtH7yMe5sWYwkUngaLCJzgj6y434Aoqv3wvozT1iSKis9' => '2413fb3709b05939f04cf2e92f7d0897fc2596f9ad0b8a9ea855c7bfebaae892',
+            '4bnDHpZKE77DZM7KrbzUZQp5W8JjagH7jXsVCwoAP93vS89msai' => '421c76d77563afa1914846b010bd164f395bd34c2102e5e99e0cb9cf173c1d87'
         );
 
         $factory = new PrivateKeyFactory($ecAdapter);
@@ -168,9 +168,9 @@ class PrivateKeyTest extends AbstractTestCase
         }
 
         $compressed = array(
-            'L3EQJoHJSXnCvNxiWBfoE7jKi89R9dcp1HPsdnVxRy6YGRmHoxKh' => 'b3615879ebf2a64542db64e29d87ae175479bafae275cdd3caf779507cac4f5b',
-            'Kwn1Y1wcKUMjdPrVxBW8uVvuyq2B8EHFTKf7zGFc7J6ueaMvFUD8' => '109dac331c97d41c6be9db32a2c3fa848d1a637807f2ab5c0e009cfb8007d1a0',
-            'KyvwuBYFruEssksxmDiQUKLwwtZt6WvFnPcdTnNPMddq15M3ezmU' => '50e36e410b227b70a1aa1abb28f1997aa6ec7a9ccddd4dc3ed708a18a0202b2f'
+            'Gw5BRJU8so94BMQFFCp8hMq5gopVsUEGZhS9C4VFUpV1iimnfXvn' => 'b3615879ebf2a64542db64e29d87ae175479bafae275cdd3caf779507cac4f5b',
+            'GwWFrPLK76JzR5P2xz4kEVEjLJ4S5JKgX49srqQS8ZpprCgugozt' => '109dac331c97d41c6be9db32a2c3fa848d1a637807f2ab5c0e009cfb8007d1a0',
+            'GuYcBEvLfYsKGYuHH3XHSr1sQi8wJxsGmySF84YgCSkBurZyNiiJ' => '50e36e410b227b70a1aa1abb28f1997aa6ec7a9ccddd4dc3ed708a18a0202b2f'
         );
 
         foreach ($compressed as $wif => $hex) {

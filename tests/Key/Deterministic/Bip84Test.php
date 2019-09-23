@@ -77,7 +77,7 @@ class Bip84Test extends AbstractTestCase
 
         $account0_0_prv = $xprivKey->derivePath("0/0");
         $this->assertEquals(
-            "KyZpNDKnfs94vbrwhJneDi77V6jF64PWPF8x5cdJb8ifgg2DUc9d",
+            "GsPaMpktzduBTjap5iVtW47tFyWYZGhExy4DL5MKH5timiqSF3mD",
             $account0_0_prv->getPrivateKey()->toWif()
         );
         $this->assertEquals(
@@ -85,13 +85,13 @@ class Bip84Test extends AbstractTestCase
             $account0_0_prv->getPublicKey()->getHex()
         );
         $this->assertEquals(
-            "bc1qcr8te4kr609gcawutmrza0j4xv80jy8z306fyu",
+            "tc1qcr8te4kr609gcawutmrza0j4xv80jy8z4emdyd",
             $account0_0_prv->getAddress($addrFactory)->getAddress()
         );
 
         $account0_1_prv = $xprivKey->derivePath("0/1");
         $this->assertEquals(
-            "Kxpf5b8p3qX56DKEe5NqWbNUP9MnqoRFzZwHRtsFqhzuvUJsYZCy",
+            "GreR5CZvNcHBdM372V65nwPFA296K1izaHrYgMbGXfAy1XBUYVLd",
             $account0_1_prv->getPrivateKey()->toWif()
         );
         $this->assertEquals(
@@ -99,13 +99,13 @@ class Bip84Test extends AbstractTestCase
             $account0_1_prv->getPublicKey()->getHex()
         );
         $this->assertEquals(
-            "bc1qnjg0jd8228aq7egyzacy8cys3knf9xvrerkf9g",
+            "tc1qnjg0jd8228aq7egyzacy8cys3knf9xvra4hd9e",
             $account0_1_prv->getAddress($addrFactory)->getAddress()
         );
 
         $account1_0_prv = $xprivKey->derivePath("1/0");
         $this->assertEquals(
-            "KxuoxufJL5csa1Wieb2kp29VNdn92Us8CoaUG3aGtPtcF3AzeXvF",
+            "GrjZxX6QerNz79Eb2zk16NAG9WZSVhArnXVjWWJHaM4fL62aNa4A",
             $account1_0_prv->getPrivateKey()->toWif()
         );
         $this->assertEquals(
@@ -113,7 +113,7 @@ class Bip84Test extends AbstractTestCase
             $account1_0_prv->getPublicKey()->getHex()
         );
         $this->assertEquals(
-            "bc1q8c6fshw2dlwun7ekn9qwf37cu2rn755upcp6el",
+            "tc1q8c6fshw2dlwun7ekn9qwf37cu2rn755u9wq7ew",
             $account1_0_prv->getAddress($addrFactory)->getAddress()
         );
     }

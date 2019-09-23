@@ -28,10 +28,10 @@ class ElectrumKeyTest extends AbstractTestCase
                 '819519e966729f31e1855eb75133d9e7f0c31abaadd8f184870d62771c62c2e759406ace1dee933095d15e4c719617e252f32dc0465393055f867aee9357cd52',
                 [
                     // sequence number => address derived at that sequence
-                    [0, '15ZL6i899dDBXm8NoXwn7oup4J5yQJi1NH'],
-                    [1, '1FQS2H5mcgh1btw9oxxZs3onfEdvwAPPiP'],
-                    [2, '1CBYszxw91ArPx8jHCD3jH8P8VwzeQdC2Z'],
-                    [3, '1N9qHajqjoMpY9FnWzwEAsorUcmbdAjA2F']
+                    [0, 'TEXY6mVsJML8gwC1PobVdxbwy5qHbG5pGh'],
+                    [1, 'TQNe2LTVmQoxm4znQEcHPCVva2PF7T5WpB'],
+                    [2, 'TM9kt4LfHjHoZ8CMsTrmFRpX3HhJwqjf6h'],
+                    [3, 'TX83He7ZtXUmhKKR7Gawh2VzPQWukNbfrG']
                 ]
             ]
         ];

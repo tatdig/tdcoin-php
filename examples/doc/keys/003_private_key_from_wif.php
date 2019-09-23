@@ -11,7 +11,7 @@ use BitWasp\Bitcoin\Script\WitnessProgram;
 $privKeyFactory = new PrivateKeyFactory();
 
 $rbg = new Random();
-$privateKey = $privKeyFactory->fromWif("L2uRfwpmG3RTXTy6ZvzTRC4Xtkwi6axoQFopgRsCEpsSc5Qh5uSP");
+$privateKey = $privKeyFactory->fromWif("GwWFrPLK76JzR5P2xz4kEVEjLJ4S5JKgX49srqQS8ZpprCgugozt");
 $publicKey = $privateKey->getPublicKey();
 echo "private key wif  {$privateKey->toWif()}\n";
 echo "            hex  {$privateKey->getHex()}\n";

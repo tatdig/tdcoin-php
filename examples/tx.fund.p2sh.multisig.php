@@ -14,13 +14,13 @@ use BitWasp\Buffertools\Buffer;
 
 // Lets pretend the coins are owned by this guy
 $privKeyFactory = new PrivateKeyFactory();
-$originPriv = $privKeyFactory->fromWif("KzBmWku6EuUXbhSym74RXUE7bKWdNanc8vTqxFrMxEstofCWsKgH");
+$originPriv = $privKeyFactory->fromWif("GuYcBEvLfYsKGYuHH3XHSr1sQi8wJxsGmySF84YgCSkBurZyNiiJ");
 $originSpk = ScriptFactory::scriptPubKey()->p2pkh($originPriv->getPubKeyHash());
 
 // 2 people want to receive BTC in a 2-of-2, so they contribute their
 // public keys, and make a P2SH multisignature address
-$privKey1 = $privKeyFactory->fromWif("L3WyxitKt4DQrhcdTEnyzLWWyurf2fz1iqCdAbuUXaUmSM328JWv");
-$privKey2 = $privKeyFactory->fromWif("L45C3XqWziQVnifEQdzwYmpGG5SPXxFv5Es8bnjE5QXZF5K8bSGh");
+$privKey1 = $privKeyFactory->fromWif("GwWFrPLK76JzR5P2xz4kEVEjLJ4S5JKgX49srqQS8ZpprCgugozt");
+$privKey2 = $privKeyFactory->fromWif("Gw5BRJU8so94BMQFFCp8hMq5gopVsUEGZhS9C4VFUpV1iimnfXvn");
 $pubKeys = array_map(function (PrivateKeyInterface $priv) {
     return $priv->getPublicKey();
 }, [$privKey1, $privKey2]);

@@ -46,7 +46,7 @@ class HierarchicalKeyTest extends AbstractTestCase
      */
     public function setUp()
     {
-        $this->network = NetworkFactory::bitcoin();
+        $this->network = NetworkFactory::tdcoin();
     }
 
     /**
@@ -153,7 +153,7 @@ class HierarchicalKeyTest extends AbstractTestCase
      */
     public function testDerivePath(EcAdapterInterface $ecAdapter)
     {
-        $network = NetworkFactory::bitcoin();
+        $network = NetworkFactory::tdcoin();
         $entropy = Buffer::hex("000102030405060708090a0b0c0d0e0f");
         $hdFactory = new HierarchicalKeyFactory($ecAdapter);
         $masterKey = $hdFactory->fromEntropy($entropy);

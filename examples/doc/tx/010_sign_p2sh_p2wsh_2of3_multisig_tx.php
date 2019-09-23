@@ -29,7 +29,7 @@ require __DIR__ . "/../../../vendor/autoload.php";
  */
 $privKeyFactory = new PrivateKeyFactory();
 $pubKeyFactory = new PublicKeyFactory();
-$privateKey1 = $privKeyFactory->fromHexCompressed('7bca8cbb9e0c108445281ade9d8f6b7d8bb18edb0b5ca4dc3aa660362b96f831', true);
+$privateKey1 = $privKeyFactory->fromHexCompressed('efe0f32bfcd7179a8b071e96d9f91b877432cb843775f2f80341ee022341b36d', true);
 $publicKey1 = $privateKey1->getPublicKey();
 
 $publicKey2 = $pubKeyFactory->fromHex("03fff6dc247b15006cb88ad4d052f303e063ac88e99c3eb98b2d20aa9328943cd9");
@@ -45,7 +45,7 @@ $witnessScript = new WitnessScript(
 $redeemScript = new P2shScript($witnessScript);
 $spendFromAddress = $redeemScript->getAddress();
 
-$sendToAddress = (new AddressCreator())->fromString('1DUzqgG31FvNubNL6N1FVdzPbKYWZG2Mb6');
+$sendToAddress = (new AddressCreator())->fromString('TMyBPueNxoCe83wgy2pQDhfV6CuUoLMRTW');
 echo "Spend from {$spendFromAddress->getAddress()}\n";
 echo "Send to {$sendToAddress->getAddress()}\n";
 

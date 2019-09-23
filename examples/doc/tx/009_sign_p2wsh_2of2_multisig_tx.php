@@ -27,10 +27,10 @@ require __DIR__ . "/../../../vendor/autoload.php";
 
 
 $privKeyFactory = new PrivateKeyFactory();
-$privateKey1 = $privKeyFactory->fromHexCompressed('7bca8cbb9e0c108445281ade9d8f6b7d8bb18edb0b5ca4dc3aa660362b96f831', true);
+$privateKey1 = $privKeyFactory->fromHexCompressed('0ad53d138174a027cef804b9416c8637cb159ee02b4c80ae6be4ca711275df33', true);
 $publicKey1 = $privateKey1->getPublicKey();
 
-$privateKey2 = $privKeyFactory->fromHexCompressed("108445281ade9d8f6b7d8bb1825ca40bedb67bca8cdc3aa6603b9b6f831b9e0c", true);
+$privateKey2 = $privKeyFactory->fromHexCompressed("efe0f32bfcd7179a8b071e96d9f91b877432cb843775f2f80341ee022341b36d", true);
 $publicKey2 = $privateKey2->getPublicKey();
 
 // The witnessScript needs to be known when spending
@@ -40,7 +40,7 @@ $witnessScript = new WitnessScript(
 
 $spendFromAddress = $witnessScript->getAddress();
 $addressCreator = new AddressCreator();
-$sendToAddress = $addressCreator->fromString('1DUzqgG31FvNubNL6N1FVdzPbKYWZG2Mb6');
+$sendToAddress = $addressCreator->fromString('TMrHAprLZ98oR24SBe2eufxJGpf7qdUraH');
 echo "Spend from {$spendFromAddress->getAddress()}\n";
 echo "Send to {$sendToAddress->getAddress()}\n";
 

@@ -6,6 +6,37 @@ namespace BitWasp\Bitcoin\Network;
 
 class NetworkFactory
 {
+
+    /**
+     * @return NetworkInterface
+     * @throws \Exception
+     */
+    public static function tdcoin(): NetworkInterface
+    {
+        return new Networks\TDCoin();
+    }
+
+    /**
+     * @return NetworkInterface
+     * @throws \Exception
+     */
+    public static function tdcoinTestnet(): NetworkInterface
+    {
+        return new Networks\TDCoinTestnet();
+    }
+
+    /**
+     * @return NetworkInterface
+     * @throws \Exception
+     */
+    public static function tdcoinRegtest(): NetworkInterface
+    {
+        return new Networks\TDCoinRegtest();
+    }
+
+
+
+
     /**
      * @return NetworkInterface
      * @throws \Exception

@@ -124,6 +124,6 @@ class Bitcoin
      */
     public static function getDefaultNetwork()
     {
-        return NetworkFactory::bitcoin();
+        return NetworkFactory::tdcoin();
     }
 }

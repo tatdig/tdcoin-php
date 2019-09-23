@@ -540,9 +540,9 @@ class SignerTest extends AbstractTestCase
     {
         $privFactory = new PrivateKeyFactory();
         $keys = [
-            $privFactory->fromWif('KzzM4K74i3uoUKHZqfBRR44T1zcChzZFMjZkxZZReiTkSPkFv6jY'),
-            $privFactory->fromWif('L34yCtA8pZ2pGjdg2sKYJ5BwqW1rQYVNdSPMbRuCUfpJN9XkMqVR'),
-            $privFactory->fromWif('KxuuCULSevY215pnSPtRHka3YH83D9w2MKtwg1y33L6pBzk3tjQ1'),
+            $privFactory->fromWif('4c5qBsExVbLCa93M25Q1b79X4mvdLe6z8oVmBph1GRBKpeQVfmU'),
+            $privFactory->fromWif('4c2hjQsvnqt5USZmxVPNrX5b7CkRirGYbQ9mAPQMThNWj66FxEM'),
+            $privFactory->fromWif('4bXo9L2EQQb67b7dMF8h4kSKsQoLYe48aRgcC3h8uxPJwf7D2ud'),
         ];
 
         $multisig = ScriptFactory::scriptPubKey()->multisig(2, array_map(function (PrivateKeyInterface $key) {
@@ -558,7 +558,7 @@ class SignerTest extends AbstractTestCase
         $addrCreator = new AddressCreator();
         $unsigned = (new TxBuilder())
             ->input('5077666f78045cb3482f64ee5d203366363af71436c1bb6db8b49c428a53f00d', 0)
-            ->payToAddress($value, $addrCreator->fromString('3EppTrJXEgNHgHoSRQdQaVQV4VS7Tg7aSs'))
+            ->payToAddress($value, $addrCreator->fromString('TTo8rYFDpLneqjy6XHYQVbL9e1QS1VYtmT'))
             ->get();
 
         $signData = (new SignData())
@@ -613,9 +613,9 @@ class SignerTest extends AbstractTestCase
     {
         $privFactory = new PrivateKeyFactory();
         $keys = [
-            $privFactory->fromWif('KzzM4K74i3uoUKHZqfBRR44T1zcChzZFMjZkxZZReiTkSPkFv6jY'),
-            $privFactory->fromWif('L34yCtA8pZ2pGjdg2sKYJ5BwqW1rQYVNdSPMbRuCUfpJN9XkMqVR'),
-            $privFactory->fromWif('KxuuCULSevY215pnSPtRHka3YH83D9w2MKtwg1y33L6pBzk3tjQ1'),
+            $privFactory->fromWif('GrFg8xQyTrUiqosPcdwCqmU8uiQeSQLpUB9uJEZ9BcdCFVUsxT6a'),
+            $privFactory->fromWif('GvaNw6mkVXtZVffWxb2SgqpqMbseCLKgKppFwm4cZ9EGtegLG6JA'),
+            $privFactory->fromWif('GuMR8nzCRvQPmDG5S4z2LWb68Hg8c2gphf5YcH7kCrrToK2BVgY3'),
         ];
 
         $multisig = ScriptFactory::scriptPubKey()->multisig(2, array_map(function (PrivateKeyInterface $key) {
@@ -630,7 +630,7 @@ class SignerTest extends AbstractTestCase
         $addrCreator = new AddressCreator();
         $unsigned = (new TxBuilder())
             ->input('5077666f78045cb3482f64ee5d203366363af71436c1bb6db8b49c428a53f00d', 0)
-            ->payToAddress($value, $addrCreator->fromString('3EppTrJXEgNHgHoSRQdQaVQV4VS7Tg7aSs'))
+            ->payToAddress($value, $addrCreator->fromString('TCpYsdGJdrPAKL7uApVqQksVzEjVs3nAKH'))
             ->get();
 
         $signData = (new SignData())

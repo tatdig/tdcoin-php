@@ -9,7 +9,7 @@ use BitWasp\Bitcoin\Script\WitnessProgram;
 require __DIR__ . "/../vendor/autoload.php";
 
 $privFactory = new PrivateKeyFactory();
-$priv = $privFactory->fromWif('L1U6RC3rXfsoAx3dxsU1UcBaBSRrLWjEwUGbZPxWX9dBukN345R1');
+$priv = $privFactory->fromWif('GuYcBEvLfYsKGYuHH3XHSr1sQi8wJxsGmySF84YgCSkBurZyNiiJ');
 $publicKey = $priv->getPublicKey();
 $pubKeyHash = $publicKey->getPubKeyHash();
 

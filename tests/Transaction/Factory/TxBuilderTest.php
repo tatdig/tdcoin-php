@@ -85,7 +85,7 @@ class TxBuilderTest extends AbstractTestCase
 
     public function testPayToAddress()
     {
-        $addressStr = '1KnHL81THzfp7tfFqHYWwo4GnY1L2rt4pk';
+        $addressStr = 'TZCQrBK4JqJfDgYokpu3ZopL7dYURWxAwQ';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($addressStr);
         $value = 50;

@@ -30,7 +30,7 @@ require __DIR__ . "/../../../vendor/autoload.php";
 
 $privKeyFactory = new PrivateKeyFactory();
 $pubKeyFactory = new PublicKeyFactory();
-$privateKey1 = $privKeyFactory->fromWif('5Hwig3iZrm6uxS6Ch1egmJGyC89Q76X5tgVgtbEcLTPTx3aW5Zi');
+$privateKey1 = $privKeyFactory->fromWif('4cJesFU3uZrfm7hojLmEhNyMxyoy58uxmZPbfpp16YG22VwpoSM');
 
 // Our public key
 $publicKey1 = $privateKey1->getPublicKey();
@@ -44,7 +44,7 @@ $redeemScript = new P2shScript(
 
 $spendFromAddress = $redeemScript->getAddress();
 $addressCreator = new AddressCreator();
-$sendToAddress = $addressCreator->fromString('1DUzqgG31FvNubNL6N1FVdzPbKYWZG2Mb6');
+$sendToAddress = $addressCreator->fromString('TA3cpjvEJMXJ7Rbo8XwY42pB53hHwcpEXG');
 echo "Spend from {$spendFromAddress->getAddress()}\n";
 echo "Send to {$sendToAddress->getAddress()}\n";
 

@@ -23,7 +23,7 @@ class WifPrivateKeySerializerTest extends AbstractBip39Case
      */
     public function testSerializer(EcAdapterInterface $ecAdapter)
     {
-        $network = NetworkFactory::bitcoin();
+        $network = NetworkFactory::tdcoin();
 
         $hexSerializer = EcSerializer::getSerializer(PrivateKeySerializerInterface::class, true, $ecAdapter);
         $wifSerializer = new WifPrivateKeySerializer($hexSerializer);
@@ -32,7 +32,7 @@ class WifPrivateKeySerializerTest extends AbstractBip39Case
         $valid = $factory->generateUncompressed(new Random());
         $this->assertEquals($valid, $wifSerializer->parse($wifSerializer->serialize($network, $valid), $network));
 
-        $invalid = Buffer::hex('8041414141414141414141414141414141');
+        $invalid = Buffer::hex('6b41414141414141414141414141414141');
         $b58 = Base58::encodeCheck($invalid);
 
         $this->expectException(\BitWasp\Bitcoin\Exceptions\InvalidPrivateKey::class);

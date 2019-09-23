@@ -10,7 +10,7 @@ require __DIR__ . "/../vendor/autoload.php";
 // or pass it into getHRP, getPrefix
 
 //$addressString = "bc1qwqdg6squsna38e46795at95yu9atm8azzmyvckulcc7kytlcckxswvvzej";
-$addressString = "3BbDtxBSjgfTRxaBUgR2JACWRukLKtZdiQ";
+$addressString = "TTqfvxaCAf48iytdB7qUoB64HxKaS2vZXr";
 
 $addrCreator = new AddressCreator();
 $address = $addrCreator->fromString($addressString);

@@ -15,8 +15,8 @@ use BitWasp\Buffertools\Buffer;
 
 // Same private keys as tx.fund.p2sh.multisig.php
 $privKeyFactory = new PrivateKeyFactory();
-$privKey1 = $privKeyFactory->fromWif("L3WyxitKt4DQrhcdTEnyzLWWyurf2fz1iqCdAbuUXaUmSM328JWv");
-$privKey2 = $privKeyFactory->fromWif("L45C3XqWziQVnifEQdzwYmpGG5SPXxFv5Es8bnjE5QXZF5K8bSGh");
+$privKey1 = $privKeyFactory->fromWif("GwWFrPLK76JzR5P2xz4kEVEjLJ4S5JKgX49srqQS8ZpprCgugozt");
+$privKey2 = $privKeyFactory->fromWif("Gw5BRJU8so94BMQFFCp8hMq5gopVsUEGZhS9C4VFUpV1iimnfXvn");
 
 // make a 2-of-2 multisignature script
 $multisig = ScriptFactory::scriptPubKey()->multisig(2, array_map(function (PrivateKeyInterface $priv) {

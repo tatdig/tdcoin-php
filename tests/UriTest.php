@@ -12,7 +12,7 @@ class UriTest extends AbstractTestCase
 {
     public function testDefault()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TUj6nE7adBhyRithAM55aAwKtsGmNzoyZn';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
@@ -21,7 +21,7 @@ class UriTest extends AbstractTestCase
 
     public function testAmount()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TZCQrBK4JqJfDgYokpu3ZopL7dYURWxAwQ';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
@@ -34,7 +34,7 @@ class UriTest extends AbstractTestCase
 
     public function testAmountBtc()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TWr4oiRi6QfK4iajq4kgbukpj4V385SUSF';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
@@ -46,7 +46,7 @@ class UriTest extends AbstractTestCase
 
     public function testLabel()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TVhqFNFN2XfVPVgYsuTPRUo8xZwXBMimNn';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
@@ -57,7 +57,7 @@ class UriTest extends AbstractTestCase
 
     public function testMessage()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TAyi3q829f4S3Xmnu6jz1Ac7XSP6pSCUcf';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
@@ -68,7 +68,7 @@ class UriTest extends AbstractTestCase
 
     public function testRequestUrl()
     {
-        $string = '1FeDtFhARLxjKUPPkQqEBL78tisenc9znS';
+        $string = 'TTqfvxaCAf48iytdB7qUoB64HxKaS2vZXr';
         $addrCreator = new AddressCreator();
         $address = $addrCreator->fromString($string);
         $uri = new Uri($address);
