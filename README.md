@@ -6,13 +6,15 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/bitwasp/bitcoin/v/stable.png)](https://packagist.org/packages/bitwasp/bitcoin)
 
-This repository contains an implementation of Bitcoin using mostly pure PHP.
+This repository contains an implementation of TDCoin using mostly pure PHP.
 
 *Warning*: This library does not support 32-bit installs of PHP. Please also note that composer is the only supported installation method.
 
 ## Installation
 
-You can install this library via Composer: `composer require bitwasp/bitcoin`
+<!--You can install this library via Composer: `composer require bitwasp/bitcoin`-->
+git clone ...
+composer install
 
 ## Contributing
 
