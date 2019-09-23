@@ -13,7 +13,8 @@ This repository contains an implementation of TDCoin using mostly pure PHP.
 ## Installation
 
 <!--You can install this library via Composer: `composer require bitwasp/bitcoin`-->
-git clone ...
+git clone https://github.com/tatdig/tdcoin-php.git
+
 composer install
 
 ## Contributing
