@@ -1,22 +1,25 @@
   
-## Bitcoin
-
+## TDCoin
+<!--
 [![Build Status](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/bitwasp/bitcoin/v/stable.png)](https://packagist.org/packages/bitwasp/bitcoin)
-
-This repository contains an implementation of Bitcoin using mostly pure PHP.
+-->
+This repository contains an implementation of TDCoin using mostly pure PHP.
 
 *Warning*: This library does not support 32-bit installs of PHP. Please also note that composer is the only supported installation method.
 
 ## Installation
 
-You can install this library via Composer: `composer require bitwasp/bitcoin`
+<!--You can install this library via Composer: `composer require bitwasp/bitcoin`-->
+git clone https://github.com/tatdig/tdcoin-php.git
+
+composer install
 
 ## Contributing
 
-All contributions are welcome. Please see [[this page](https://github.com/Bit-Wasp/bitcoin-php/blob/master/CONTRIBUTING.md)] before you get started
+All contributions are welcome. Please see [[this page](https://github.com/tatdig/tdcoin-php/blob/master/CONTRIBUTING.md)] before you get started
 
 ## Documentation
 
@@ -37,10 +40,10 @@ All contributions are welcome. Please see [[this page](https://github.com/Bit-Wa
 
 # Other projects
 
- - [buffertools-php](https://github.com/Bit-Wasp/buffertools-php) - Toolkit for working with binary data in PHP
- - [ext-secp256k1](https://github.com/Bit-Wasp/secp256k1-php) - PHP bindings to libsecp256k1
+ - [buffertools-php](https://github.com/tatdig/buffertools-php) - Toolkit for working with binary data in PHP
+ - [ext-secp256k1](https://github.com/tatdig/secp256k1-php) - PHP bindings to libsecp256k1
  - [ext-bitcoinconsensus](https://github.com/Bit-Wasp/bitcoinconsensus-php) - PHP bindings to libbitcoinconsensus
- - [bitcoin-p2p-php](https://github.com/Bit-Wasp/bitcoin-p2p-php) - PHP implementation of bitcoin P2P messaging using reactphp
+ - [bitcoin-p2p-php](https://github.com/tatdig/bitcoin-p2p-php) - PHP implementation of bitcoin P2P messaging using reactphp
  - [stratum-php](https://github.com/Bit-Wasp/stratum-php) - PHP implementation of the stratum protocol using reactphp
  - [electrum-discovery-php](https://github.com/Bit-Wasp/electrum-discovery-php) - Electrum server discovery (over IRC) using reactphp
  - [node-php](https://github.com/Bit-Wasp/node-php) - A toy project (really just for fun) a full node using bitcoin-p2p-php
