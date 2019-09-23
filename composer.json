@@ -1,8 +1,8 @@
 {
-  "name": "bitwasp/bitcoin",
-  "description": "PHP Bitcoin library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
+  "name": "tatdig/tdcoin-php",
+  "description": "PHP TDCoin library with functions for transactions, signatures, serialization, Random/Deterministic ECDSA keys, blocks, RPC bindings",
   "type": "library",
-  "homepage": "https://github.com/bit-wasp/bitcoin-php",
+  "homepage": "https://github.com/tatdig/tdcoin-php",
   "license": "Unlicense",
   "authors": [
     {
