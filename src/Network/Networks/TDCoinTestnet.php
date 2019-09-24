@@ -5,7 +5,7 @@ namespace BitWasp\Bitcoin\Network\Networks;
 use BitWasp\Bitcoin\Network\Network;
 use BitWasp\Bitcoin\Script\ScriptType;
 
-class BitcoinTestnet extends Network
+class TDCcoinTestnet extends Network
 {
     /**
      * {@inheritdoc}
