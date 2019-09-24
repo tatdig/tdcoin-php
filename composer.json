@@ -38,7 +38,7 @@
           },
           {
               "type": "vcs",
-              "url": "https://github.com/tatdig/bitcoinconsensus-php.git"
+              "url": "https://github.com/tatdig/tdcoinconsensus-php.git"
           }
   ],
   
@@ -61,6 +61,6 @@
     "squizlabs/php_codesniffer": "^2.0.0",
     "nbobtc/bitcoind-php": "v2.0.2",
     "tatdig/secp256k1-php": "^v0.2.0",
-    "tatdig/bitcoinconsensus": "v3.0.1"
+    "tatdig/tdcoinconsensus": "v3.0.1"
   }
 }
