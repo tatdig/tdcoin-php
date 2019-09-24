@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\RpcTest;
+namespace BitWasp\Bitcoin\RpcTests;
 
 class ServerTest extends AbstractTestCase
 {

@@ -19,7 +19,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "BitWasp\\Bitcoin\\Tests\\": "tests/"
+      "BitWasp\\Bitcoin\\Tests\\": "tests/",
+      "BitWasp\\Bitcoin\\RpcTests\\": "tests-rpc/"
     }
   },
   

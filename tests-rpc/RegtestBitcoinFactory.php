@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\RpcTest;
+namespace BitWasp\Bitcoin\RpcTests;
 
 use BitWasp\Bitcoin\Crypto\Random\Random;
 use BitWasp\Bitcoin\Network\NetworkFactory;
@@ -45,13 +45,13 @@ class RegtestBitcoinFactory
     public function __construct()
     {
         $this->testsDirPath = $this->envOrDefault("BITCOIND_TEST_DIR", "/tmp");
-        $this->bitcoindPath = $this->envOrDefault("BITCOIND_PATH");
-        if (null === $this->bitcoindPath) {
+        $this->bitcoindPath = $this->envOrDefault("BITCOIND_PATH",'/opt/tdcoin/tdcoind -regtest');
+        if (empty($this->bitcoindPath)) {
             throw new \RuntimeException("Missing BITCOIND_PATH variable");
         }
 
-        $this->network = NetworkFactory::bitcoinTestnet();
-        $this->credential = new RpcCredential("127.0.0.1", 18332, "rpcuser", "rpcpass", false);
+        $this->network = NetworkFactory::tdcoinRegtest();
+        $this->credential = new RpcCredential("127.0.0.1", 19902, "rpcuser", "rpcpass", false);
     }
 
     /**
@@ -59,9 +59,10 @@ class RegtestBitcoinFactory
      * @param string|null $default
      * @return string
      */
-    private function envOrDefault(string $var, string $default = null): string
+    private function envOrDefault(string $var, string $default = ''): string
     {
         $value = getenv($var);
+        echo PHP_EOL.$value.PHP_EOL;
         if (in_array($value, [null, false, ""])) {
             $value = $default;
         }

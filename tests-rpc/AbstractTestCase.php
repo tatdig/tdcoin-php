@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BitWasp\Bitcoin\RpcTest;
+namespace BitWasp\Bitcoin\RpcTests;
 
 use BitWasp\Bitcoin\Network\NetworkInterface;
 use BitWasp\Bitcoin\Script\Interpreter\Interpreter;
