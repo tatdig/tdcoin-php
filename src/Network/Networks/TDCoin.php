@@ -47,7 +47,7 @@ class TDCoin extends Network
      * {@inheritdoc}
      * @see Network::$signedMessagePrefix
      */
-    protected $signedMessagePrefix = "TDCoin Signed Message";
+    protected $signedMessagePrefix = "Tdcoin Signed Message"; //see TDCoin Core for reference
 
     /**
      * {@inheritdoc}
