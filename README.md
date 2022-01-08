@@ -47,7 +47,7 @@ All contributions are welcome. Please see [[this page](https://github.com/tatdig
  - [stratum-php](https://github.com/tatdig/stratum-php) - PHP implementation of the stratum protocol using reactphp
  - [electrum-discovery](https://github.com/tatdig/electrum-discovery) - Electrum server discovery (over IRC) using reactphp
  - [node-php](https://github.com/tatdig/node-php) - A toy project (really just for fun) a full node using bitcoin-p2p-php
- - [bip70-php](https://github.com/bip70/bip70-php) - A BIP70 (payment requests) implementation for PHP
+ - [bip70-php](https://github.com/tatdig/bip70-php) - A BIP70 (payment requests) implementation for PHP
 
 ## Supporters
 
