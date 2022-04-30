@@ -13,9 +13,9 @@ class SignedMessageSerializer
 {
 
     // Message headers
-    const HEADER = '-----BEGIN BITCOIN SIGNED MESSAGE-----';
+    const HEADER = '-----BEGIN CRYPTO SIGNED MESSAGE-----';
     const SIG_START = '-----BEGIN SIGNATURE-----';
-    const FOOTER = '-----END BITCOIN SIGNED MESSAGE-----';
+    const FOOTER = '-----END CRYPTO SIGNED MESSAGE-----';
 
     /**
      * @var CompactSignatureSerializerInterface
